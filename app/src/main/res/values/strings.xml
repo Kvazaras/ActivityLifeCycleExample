@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ActivityLifeCycleExample</string>
+    <string name="btn_open_url">OpenUrl</string>
+</resources>
