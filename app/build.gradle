@@ -3,8 +3,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "com.example.activitylifecycleexample"
@@ -26,6 +25,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'com.example.activitylifecycleexample'
 }
 
 dependencies {

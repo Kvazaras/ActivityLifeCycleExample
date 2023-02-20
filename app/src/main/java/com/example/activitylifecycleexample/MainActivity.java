@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
-        Log.i("Routine", "onCreate => ");
+        Log.i("RoutineDealingWithExist", "onCreate => ");
     }
 
     //After Stopped
@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
-        Log.i("Routine", "onStart => ");
+        Log.w("RoutineDealingWithVis", "onStart => ");
     }
 
     //Got focus
     protected void onResume() {
         super.onResume();
         Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
-        Log.i("RoutineDealingWithFocus", "onResume => ");
+        Log.e("RoutineDealingWithFocus", "onResume => ");
     }
 
     //Lost focus
@@ -52,14 +52,15 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
         Log.i("RoutineDealingWithFocus", "onPause => ");
+        //Code for saving data
     }
 
     //Not visible
     @Override
     protected void onStop() {
         super.onStop();
-        Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
-        Log.i("Routine", "onStop => ");
+        Log.i("RoutineDealingWithVis", "onStop => ");
+        //Code for saving data
     }
 
     //Destroyed, memory freed
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
-        Log.i("Routine", "onDestroy => ");
+        Log.i("RoutineDealingWithExist", "onDestroy => ");
     }
 
     public void onBtnOpenUrlClick(View view) {
