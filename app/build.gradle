@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.example.activitylifecycleexample"
-        minSdkVersion 22
-        targetSdkVersion 30
+        minSdkVersion 29
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
