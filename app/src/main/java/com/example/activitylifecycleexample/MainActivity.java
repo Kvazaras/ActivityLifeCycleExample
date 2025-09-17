@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
         Log.i("RoutineDealingWithExist", "onCreate => ");
     }
 
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
 
-        //Toast.makeText(this, "onRestart", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "onRestart", Toast.LENGTH_SHORT).show();
         Log.i("Routine", "onRestart => ");
     }
 
@@ -35,14 +35,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        //Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
         Log.w("RoutineDealingWithVis", "onStart => ");
     }
 
     //Got focus
     protected void onResume() {
         super.onResume();
-        //Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
         Log.e("RoutineDealingWithFocus", "onResume => ");
     }
 
@@ -50,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        //Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
         Log.i("RoutineDealingWithFocus", "onPause => ");
         //Code for saving data
     }
@@ -59,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        //Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
         Log.i("RoutineDealingWithVis", "onStop => ");
         //Code for saving data
     }
@@ -68,7 +71,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
         Log.i("RoutineDealingWithExist", "onDestroy => ");
     }
 
